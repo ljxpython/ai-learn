@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Enterprise AI Agent Platform Architecture",
+    "output": "assets/architecture/ai-agent-platform.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "chat-runtime",
+        "label": "Agent Execution Flow",
+        "focus": ["clients", "gateway", "runtime", "state_store", "llm_gateway", "mcp_tools"],
+        "note": "Real-time user conversation streaming through LangGraph runtime and sandboxed tools."
+      },
+      {
+        "id": "control-plane",
+        "label": "Governance & Control Plane",
+        "focus": ["gateway", "api", "db", "runtime"],
+        "note": "Tenant management, RBAC authorization, and model catalog governance."
+      },
+      {
+        "id": "state-observability",
+        "label": "Persistence & Telemetry",
+        "focus": ["runtime", "state_store", "observability", "api"],
+        "note": "Durable checkpointing with GraphHarbor alongside end-to-end tracing."
+      }
+    ]
+  },
+  "components": [
+    { "id": "clients", "type": "external", "label": "Clients", "sublabel": "Vue 3 Web / SDK", "pos": [40, 240], "size": [130, 60] },
+    { "id": "gateway", "type": "security", "label": "API Gateway", "sublabel": "Traefik :443", "pos": [240, 240], "size": [130, 60] },
+    { "id": "api", "type": "backend", "label": "Platform API", "sublabel": "FastAPI :8000", "pos": [460, 110], "size": [140, 60], "tag": "Control Plane" },
+    { "id": "db", "type": "database", "label": "PostgreSQL", "sublabel": "Catalog & Audit", "pos": [680, 110], "size": [140, 60], "tag": "Metadata" },
+    { "id": "observability", "type": "cloud", "label": "Telemetry", "sublabel": "OTel Tracing & Log", "pos": [900, 110], "size": [140, 60], "tag": "Observability" },
+    { "id": "runtime", "type": "backend", "label": "Runtime Service", "sublabel": "LangGraph Engine", "pos": [460, 360], "size": [140, 60], "tag": "Execution Core" },
+    { "id": "state_store", "type": "database", "label": "GraphHarbor & Redis", "sublabel": "State Checkpoints", "pos": [680, 360], "size": [150, 60], "tag": "HITL State" },
+    { "id": "mcp_tools", "type": "cloud", "label": "MCP Tool Servers", "sublabel": "Sandboxed Tools", "pos": [460, 520], "size": [140, 60], "tag": "Stdio / SSE" },
+    { "id": "llm_gateway", "type": "external", "label": "LLM Router", "sublabel": "Multi-Provider Gate", "pos": [680, 520], "size": [150, 60], "tag": "Inference" }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Platform Control Plane", "wraps": ["api", "db", "observability"] },
+    { "kind": "security-group", "label": "Agent Execution Plane", "wraps": ["runtime", "state_store"] },
+    { "kind": "region", "label": "Integration Ecosystem", "wraps": ["mcp_tools", "llm_gateway"] }
+  ],
+  "connections": [
+    { "id": "clients-gateway", "from": "clients", "to": "gateway", "label": "HTTPS / WSS", "variant": "emphasis" },
+    { "id": "gateway-api", "from": "gateway", "to": "api", "label": "REST Admin", "fromSide": "right", "toSide": "left" },
+    { "id": "gateway-runtime", "from": "gateway", "to": "runtime", "label": "SSE Stream", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "api-db", "from": "api", "to": "db", "label": "SQLAlchemy", "fromSide": "right", "toSide": "left" },
+    { "id": "db-observability", "from": "db", "to": "observability", "label": "Audit Export", "variant": "dashed", "fromSide": "right", "toSide": "left" },
+    { "id": "api-runtime", "from": "api", "to": "runtime", "label": "Catalog Sync", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelDy": 40 },
+    { "id": "runtime-state", "from": "runtime", "to": "state_store", "label": "Checkpoints", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "runtime-mcp", "from": "runtime", "to": "mcp_tools", "label": "Tool Call", "fromSide": "bottom", "toSide": "top", "labelDy": 30 },
+    { "id": "runtime-llm", "from": "runtime", "to": "llm_gateway", "label": "Inference", "fromSide": "right", "toSide": "left" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Physical Separation", "items": ["Platform API handles RBAC, multi-tenancy and audit", "Runtime Service runs stateless graph engines isolated from control-plane DB"] },
+    { "dot": "emerald", "title": "Stateful Reliability", "items": ["GraphHarbor persists thread states for pause/resume and HITL approval", "Redis provides session caching and distributed locking"] },
+    { "dot": "rose", "title": "Ecosystem Extensibility", "items": ["Model Catalog routes prompts to OpenAI, Claude, or local Ollama models", "MCP Tool Servers run in isolated sandboxes to prevent privilege escalation"] }
+  ]
+}

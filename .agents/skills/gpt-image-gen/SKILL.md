@@ -109,7 +109,45 @@ AI 默认将多张图合并在一个画布。多图场景必须在指令最开�
 【第 1 张】（在以上风格下，具体画什么）
 ```
 
+### 法则 7：原子化图文互锁 (Atomic Multi-Compartment) ⭐️ 新
+高信息密度知识图谱严禁使用模糊长难句。必须对每个单元格进行**原子化局部封闭描述**：
+1. **物理外框死锁**：显式声明“深蓝手绘大圆角外框，内部精确切分为 2 列 × 4 行”。
+2. **四件套语法锁定**：
+   `Row {r} Col {c} ({ID})` ➔ `[红色双圈序号]` + `[模块手写标题与下划线]` + `[小胶囊框: 定义内容]` + `[1个具象微简笔画/图示]` + `[2~3点精炼列表]`。
+   杜绝各模块间文字溢出与重合。
+
+### 法则 8：纸张底衬与物理纯净度安全壳 (Paper Cleanliness Armor) ⭐️ 新
+手绘/手账/笔记类出图，AI 极易自作聪明画出脏阴影、发灰褶皱和杂乱打孔。**必须在提示词开头与末尾双向锁定纯净安全壳**：
+- **正向声明**：`The background is a completely flat, pristine warm cream-white (or cream-green grid) paper, absolutely flat without any binder rings, spiral coils (除非模板显式指定), hole punchers, harsh shadows, or dirty paper stains.`
+- **负向拦截**：`Strict Negative: NO 3D rendering, NO photorealistic objects, NO binder rings, NO hole punchers, NO harsh shadows, NO dirty paper stains, NO blurry text, NO background overlap.`
+
+### 法则 9：架构语义蒸馏与色块分层协议 (Architecture Structurer Protocol) ⭐️ 新
+面对用户杂乱、发散的产品或系统描述，严禁直接丢进画图模型！必须先启动**架构结构化蒸馏器**：
+1. **一句话定位**：系统靠什么变强、越用越怎样。
+2. **严格 3~5 层从上到下分层**：
+   - 每层只答两件事：① 是什么　② 负责什么/产出喂给谁。
+   - 标注色块顺序（蓝 ➔ 绿 ➔ 紫 ➔ 橙 ➔ 灰），为画图 AI 设定色彩路由。
+3. **数据闭环（一句话）**：从数据输入到下一次判断更准的完整闭环。
+4. **待补清单**：没说清楚的地方绝不替用户硬编，单列「⚠ 待补」反问。
+
+### 法则 10：大厂生产架构纯白矢量与单层卡片铁律 (Vector Flat & Single-Deck Rule) ⭐️ 新
+工业级/企业级系统架构图出图，必须严格遵循防翻车红线：
+1. **绝对纯白矢量底**：背景强制 `#FFFFFF`，杜绝 3D 渲染、玻璃反光、杂乱纹理。
+2. **严禁冷色跳色污染**：全图色系统一为科技深蓝（Royal Navy Blue）、浅冰蓝（Ice Blue）与纯白，严禁突兀插入紫色（易导致扩散模型字符粘连崩溃）。
+3. **彻底拍平，拒绝双层套娃**：卡片一律采用单层圆角白色长方块，横向并排单行卡片绝对不能超过 5~6 个，字数控制在 4~6 字以内，黑字白底，保证极高边缘对比度。
+
+### 法则 11：色彩克制与呼吸通透 (Color Harmony)
+- **拒绝杂乱刺眼**：底色与主视觉保持协调（低饱和或同色阶统合），点缀色适可而止，避免色彩打架。
+- **防止颜色渗漏**：在提示词中避免突兀堆砌互斥的高饱和原色，保持整体画面的质感与通透呼吸。
+
+### 法则 12：主次分明与空间呼吸 (Visual Hierarchy)
+- **文字是主角，装饰是绿叶**：配图与装饰只烘托氛围，严禁遮挡、压盖文字主体。
+- **构图灵动透气**：不拘泥死板骨架，根据内容自然排版流动，留足呼吸空间，杜绝死气沉沉的机械感。
+
+
+
 ---
+
 
 ## 构图决策矩阵
 
@@ -117,10 +155,18 @@ AI 默认将多张图合并在一个画布。多图场景必须在指令最开�
 
 | 内容逻辑 | 典型场景 | 推荐构图 | 对应模板 |
 |---|---|---|---|
+| **知识速记/考点大盘** | 8大概念、核心考点、基础语法、术语地图 | 2×N 深蓝手绘大网格 | `sketchnote-knowledge-map` ⭐️ |
+| **理论演进/深度剖析** | 架构演进时间线、调用链路、微架构剖析 | 5mm 方格纸三段式 (左文右图) | `studygram-swiss-grid` ⭐️ |
+| **上手指南/实战总览** | 生产落地指南、大纲第 1 页、踩坑清单 | 活页打孔纸 + 7栏图标 + 火柴人 | `binder-geek-guide` ⭐️ |
+| **公式/协议/选型盘点** | 工具库盘点、万能公式系列、选型对比 | 金属双线圈手账 + 胶带便签拼贴 | `spiral-notebook-scrapbook` ⭐️ |
+| **全景生产架构全景** | 企业级 AI 平台全景蓝图、三栏翼展 | 三栏翼展纯白底 2D 矢量图 | `enterprise-architecture-blueprint` ⭐️ |
+| **全景自检/痛点诊断** | 架构自检、排查避坑、社媒高互动引流图 | 多层堆栈 + 痛点警示标签 + 底部互动横幅 | `diagnostic-architecture-stack` ⭐️ |
+| **执行流水线/Skills** | 5步线性流水线、从需求到执行的技能链路 | 单列纵向5层 + 灰色圆角序号 + 2×4技能矩阵 | `linear-skills-pipeline` ⭐️ |
+| **治愈彩泥/玩法套图** | 工具玩法盘点、治愈系干货手账、小红书高赞爆款 | 3D 彩泥捏制 + 小熊吉祥物 + 圆角泥塑卡片 | `claymation-studygram-guide` ⭐️ |
+| **复古素描/学霸手记** | 学习方法论、自律日程表、复古文艺手账 | 金属线圈装订 + 蘸水笔排线素描 + 焦糖淡彩 + 伏案少女 | `vintage-sketchbook-studygram` ⭐️ |
 | **并列清单** | N个要点/建议/书单，无先后强弱 | 竖版卡片堆叠 / 网格布局 | `infographic-grid-lecture` |
 | **层级递进** | 新手→进阶→专家，从0到1蜕变 | 阶梯递进 / 3D石阶 | `3d-staircase-evolution` |
 | **对比分析** | 正确vs错误，传统vs现代，Before&After | 左右分屏双栏 | `infographic-decision-poster` |
-| **流程步骤** | 操作流程，申请指南，教程步骤 | 纵向时间线 / 瀑布流 | `3d-staircase-evolution` |
 | **总分结构** | 核心观点+N个分论点，一个主题多维度 | 花瓣环绕 / 中心发散 | `infographic-grid-lecture` |
 | **地图/导览** | 城市探店，知识地图，美食地图 | 手绘水彩地图 | `handdrawn-map-infographic` |
 | **叙事故事** | 博弈场景，情感冲突，角色对话 | 竖版多格条漫 | `comic-strip-story` |
@@ -129,15 +175,21 @@ AI 默认将多张图合并在一个画布。多图场景必须在指令最开�
 | **硬件拆解** | 产品爆炸图，系统架构，组件层级 | 3D立体爆炸图 | `exploded-diagram-tech` |
 
 **万能兜底三选一**（想不出来就用这三个）：
-1. 🃏 `竖版卡片堆叠` → 清单类
-2. ⏳ `纵向时间线` → 有顺序的内容
-3. 🌸 `花瓣环绕` → 分类/总分结构
+1. 🃏 `2×N 深蓝手绘网格` → 概念速记类 (`sketchnote-knowledge-map`)
+2. ⏳ `方格纸左文右图` → 原理与演进类 (`studygram-swiss-grid`)
+3. 🌸 `线圈便签拼贴` → 选型与工具盘点 (`spiral-notebook-scrapbook`)
 
 ---
 
 ## 模板库总览
 
-### 当前 15 个模板（按场景域分组）
+### 当前 22 个模板（按场景域分组）
+
+**📝 学霸手绘手记（AI 核心技术与面试首选 ⭐️）：**
+- `sketchnote-knowledge-map`：学霸手绘手账知识地图 (2xN 宫格、双圈红标、纯平底纸) ⭐️
+- `studygram-swiss-grid`：现代学院派方格手绘笔记 (5mm方格纸、三色马克笔高亮、左文右图) ⭐️
+- `binder-geek-guide`：极客活页草稿本上手指南 (活页纸打孔、7栏虚线能力、爬楼火柴人) ⭐️
+- `spiral-notebook-scrapbook`：线圈手账便签拼贴风 (金属双螺旋线圈、和纸胶带、机器人吉祥物、清单卡) ⭐️
 
 **🎓 教学信息图：**
 - `3d-staircase-evolution`：9:16 三维石阶演化时间轴（层级递进、100字原生直出）⭐️
@@ -216,6 +268,49 @@ python3 ~/.gemini/config/skills/gpt-image-gen/scripts/generate.py "<prompt>" -o 
 ```
 
 ---
+
+## 🧠 高信息密度手绘知识图谱提示词合成范式 (Prompt Synthesis Paradigm SOP) ⭐️
+
+> **核心原则**：AI Agent 严禁将大段长篇大论的原版技术文字直接堆入提示词！高质量出图依靠的是 **4 步严密蒸馏与原子化封装**。
+
+```
+原始技术长文 / 代码 / 题目
+       ↓
+Step 1: 语义蒸馏 (Semantic Distillation) ➔ 压缩为高频短语 + 物理微隐喻
+       ↓
+Step 2: 构图骨架匹配 (Skeleton Selection) ➔ 4 大手绘手账母版匹配
+       ↓
+Step 3: 原子化图文互锁注入 (Atomic Slot Injection) ➔ 物理边界锁死 + 反引号包裹
+       ↓
+Step 4: 纸张纯净度与负向安全壳 (Armor Injection) ➔ 强制注入防脏/防阴影/防乱码
+```
+
+### 1. Step 1: 语义蒸馏 (Semantic Distillation)
+将原本数十行的技术解析，提炼为统一的原子卡片四件套：
+* **模块标题**：2~6 字（如 `Chunking 文档切分`、`MCP 工具协议`）
+* **核心定义**：1 句话、20 字以内（如 `海量文本切为语义块`）
+* **微简笔画隐喻**：将抽象代码具象化为 1 个生活/物理符号（如：切文档 ➔ 剪刀与重叠块；混合检索 ➔ 放大镜与磁铁；状态机 ➔ 小机器人头戴齿轮）
+* **行动列表**：2~3 条短语，带 `•` 或 `☑️`（如 `• 固定长度/语义边界/父子切分`）
+
+### 2. Step 2: 构图骨架匹配 (Skeleton Selection)
+* 概念速记 / 考点大盘 (6~8项) ➔ 选 **`sketchnote-knowledge-map`**（2×N 宫格）
+* 架构演进 / 理论模型 / 状态时序 ➔ 选 **`studygram-swiss-grid`**（5mm方格纸三段式左文右图）
+* 实战上手指南 / 生产总览 / 避坑清单 ➔ 选 **`binder-geek-guide`**（活页打孔纸+火柴人）
+* 工具库选型 / 万能公式系列 ➔ 选 **`spiral-notebook-scrapbook`**（金属线圈便签拼贴）
+
+### 3. Step 3: 原子化图文互锁注入 (Atomic Slot Injection)
+* 绝不使用模糊方位词（如“在旁边画”、“在右下角放文字”）。
+* **单元格内部使用原子公式封闭描述**：
+  `Row {r} Col {c} ({ID}): Top left shows red double-circle badge with {ID}, title {TITLE} underlined in red. Inside blue capsule: {DEFINITION}. Doodle illustration of {DOODLE}. Bullet points: {BULLETS}.`
+* **所有要画出来的文字必须 100% 用反引号包裹**：`\`Token\``、`\`RAG 检索增强\``。
+
+### 4. Step 4: 纸张纯净度与负向安全壳 (Armor Injection)
+在生成的最终 Prompt 开头与结尾，强制缝合纯净纸张约束：
+* **开头纸张锁定**：`The background is a completely flat, pristine warm cream-white paper with faint lines, completely flat without any binder rings, spiral coils (除非显式指定), hole punchers, or harsh shadows.`
+* **末尾严格负向拦截**：`STRICT NEGATIVE: NO 3D rendering, NO photorealistic objects, NO metallic gloss, NO binder rings, NO hole punchers, NO harsh shadows, NO dirty stains, NO dark backgrounds, NO blurry text, NO cluttered overlap.`
+
+---
+
 
 ## 资源文件索引
 

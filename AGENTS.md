@@ -10,7 +10,7 @@
 |------|------|------|
 | **学习** | 整理网络资料 + 抖音真实面试题 → 结构化知识体系 | `01-interview-qa/` |
 | **实战** | 面试题与 [ai-agent-platform](../ai-agent-platform) 项目深度绑定，用真实生产代码/踩坑经验作答 | `02-my-project/` |
-| **记忆** | **双视觉引擎**：`gpt-image-gen` (高质感封面/隐喻) + **Excalidraw** (白板手绘风思维导图/架构拓扑) | `assets/images/` & `assets/excalidraw/` |
+| **记忆** | **视觉矩阵 (三驾马车)**：<br>1. **架构与工程拓扑** ➔ `/archify` (自包含交互式 HTML/SVG，正交无损，多视图切换)<br>2. **白板手绘思维导图** ➔ `Excalidraw` (霞鹜文楷手绘风)<br>3. **概念隐喻与社媒手账** ➔ `gpt-image-gen` (学霸笔记/便签/高质感头图) | `assets/architecture/`<br>`assets/excalidraw/`<br>`assets/images/` |
 | **笔记** | 体系化全量在线知识库，面试前速查与背书 | [knowledge-site](https://github.com/ljxpython/knowledge-site-template) (`04-knowledge-site/`) |
 | **演示** | 面试现场高浓度战术汇报幻灯片，3分钟击穿面试官心智 | [knowledge-deck](https://github.com/ljxpython/knowledge-deck-template) (`04-knowledge-deck/`) |
 | **输出** | 优质内容多端适配，打造个人技术影响力 | 掘金、小红书、CSDN、知乎 (`03-articles/`) |
@@ -59,8 +59,9 @@ ai-learn/
 │   └── other/                  # 其它散落资料
 │
 └── assets/                     # 统一静态资产库
-    ├── images/                 # gpt-image-gen 生成的概念配图与海报
-    └── excalidraw/             # Excalidraw 思维导图与手绘白板架构图 (.svg / .excalidraw)
+    ├── architecture/           # /archify 编译生成的交互式架构图 (.html / .json / .svg)
+    ├── excalidraw/             # Excalidraw 思维导图与手绘白板架构图 (.svg / .excalidraw)
+    └── images/                 # gpt-image-gen 生成的概念配图、手绘手账与社媒图文海报
 ```
 
 ## 🤖 Agent 工作约定
@@ -71,15 +72,16 @@ ai-learn/
 - **学习伙伴**：深度剖析技术本质，坚决拒绝死记硬背
 - **面试教练**：模拟严苛面试官步步紧逼，暴露逻辑漏洞
 - **架构参谋**：把题目精准引流至 `ai-agent-platform`，用真实代码击溃八股文
-- **视觉架构师**：调度 `gpt-image-gen` 与指导设计 `Excalidraw` 手绘脑图
+- **视觉架构师**：**架构图 100% 收敛至 `/archify`**，手绘思维导图调度 `Excalidraw`，概念与手账海报调度 `gpt-image-gen`
 - **宣发总监**：一鱼多吃，把一次性解题转化为多平台爆款文章与 Deck 演示胶片
 
 ### 核心工作流
 1. **输入处理**：扫描 `05-resources/` 原始材料 ➔ 拆解题目 ➔ 分类归入 `01-interview-qa/` 且自动去重。
 2. **结构化精解**：生成“一句话记忆锚点 + 标准规范解答 + 口语化应答 + 记忆技巧 + 延伸追问”。
 3. **视觉与记忆赋能**：
-   - 核心逻辑/流程链路/对比拓扑 ➔ 提供 **Excalidraw** 思维导图结构或图元（存入 `assets/excalidraw/`）。
-   - 平台封面/概念隐喻 ➔ 调度 `gpt-image-gen` 产出高质量插图（存入 `assets/images/`）。
+   - **工业级系统架构/执行链路/时序调用** ➔ **强制调用 `/archify`** 编译交互式无损矢量 HTML/SVG（存入 `assets/architecture/`）。
+   - **核心逻辑/白板草稿/对比拓扑** ➔ 提供 **Excalidraw** 思维导图结构或图元（存入 `assets/excalidraw/`）。
+   - **平台封面/概念隐喻/学霸手账笔记** ➔ 调度 `gpt-image-gen` 产出高质量插图（存入 `assets/images/`）。
 4. **项目联动**：调用 `project-linker` 检索 `ai-agent-platform`，生成真实实战段落。
 5. **资产沉淀与分发**：
    - 笔记全景同步至 `knowledge-site`

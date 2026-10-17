@@ -9,6 +9,7 @@
 
 | 场景域 ID | 中文名 | 懒加载案例文件 | 估算 tokens |
 |---|---|---|---|
+| `handdrawn-studygram` | ⭐️ 学霸手绘手账·知识地图·活页手记 | *(直接套用 templates/ 下 4 套 YAML 模板)* | — |
 | `infographic-edu` | 教学信息图·流程·知识卡 | `cases/infographic-edu-a.md` + `cases/infographic-edu-b.md` | ~45K |
 | `social-media` | 社媒界面·截图·内容卡 | `cases/social-media.md` | ~26K |
 | `brand-poster` | 品牌海报·国潮·城市·产品 | `cases/brand-poster-a.md` + `cases/brand-poster-b.md` | ~42K |
@@ -25,7 +26,23 @@
 
 ## 场景域详细触发规则
 
+### 📝 handdrawn-studygram — 学霸手绘手账·知识地图·活页手记 (最高优先级 ⭐️)
+
+**触发关键词（出现任意 1+ 个即命中）：**
+`手账` `手绘` `学霸笔记` `方格纸` `活页本` `草稿纸` `简笔画` `手撕手记` `火柴人` `思维导图` `知识地图` `知识卡` `便签` `胶带` `线圈本` `一图搞懂` `一图看懂` `小红书干货卡` `面试速记`
+
+**内容逻辑 → 模板路由（4大成熟流派）：**
+| 内容诉求 | 推荐流派 | 对应模板 YAML |
+|---|---|---|
+| 概念速记 / 核心考点 / 8大概念地图 | 2×N 深蓝手绘大网格 | `templates/sketchnote-knowledge-map.yaml` |
+| 理论演进 / 架构原理 / 带引线流程 | 5mm 方格纸三段式 (左文右图) | `templates/studygram-swiss-grid.yaml` |
+| 生产上手指南 / 学习路线 / 踩坑清单 | 活页打孔纸 + 7栏图标 + 火柴人 | `templates/binder-geek-guide.yaml` |
+| 工具库选型 / 万能公式系列 / 协议对比 | 金属双线圈手账 + 胶带便签拼贴 | `templates/spiral-notebook-scrapbook.yaml` |
+
+---
+
 ### 🎓 infographic-edu — 教学信息图·流程·知识卡
+
 
 **触发关键词（出现任意 2+ 个即命中）：**
 `信息图` `流程图` `时间线` `知识卡` `百科卡` `科普` `学习表` `对比表` `步骤` `教学` `图谱` `可视化` `infographic` `timeline` `diagram` `chart` `数据` `分析` `框架` `方法论` `路线图` `思维导图` `总结图`

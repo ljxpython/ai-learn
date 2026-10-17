@@ -161,9 +161,14 @@ ai-learn/
 
 ---
 
-## 🔗 关联资源
+## 🔗 关联资源与在线交付
 
-- **实战项目代码**：`/Users/lijiaxin/PyCharmMiscProject/ai-agent-platform`
-- **在线知识站模板**：https://github.com/ljxpython/knowledge-site-template
-- **演示幻灯片模板**：https://github.com/ljxpython/knowledge-deck-template
+- **本地实战项目**：`/Users/lijiaxin/PyCharmMiscProject/ai-agent-platform`
+- **核心知识库源码**：https://github.com/ljxpython/ai-learn (本仓库)
+- **在线知识站 (Site)**：
+  - 代码仓库：https://github.com/ljxpython/ai-knowledge-site
+  - 线上访问：https://ljxpython.github.io/ai-knowledge-site/
+- **现场演示胶片 (Deck)**：
+  - 代码仓库：https://github.com/ljxpython/ai-knowledge-deck
+  - 线上访问：https://ljxpython.github.io/ai-knowledge-deck/
 - **全网分发矩阵**：掘金 / 小红书 / CSDN / 知乎

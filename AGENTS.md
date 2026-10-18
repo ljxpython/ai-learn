@@ -27,7 +27,8 @@ ai-learn/
 │   ├── excalidraw-gen/         # Excalidraw 原生手绘思维导图生成与导出引擎（霞鹜文楷/双向绑定）
 │   ├── interview-qa/           # 面试题处理核心技能（去重 / 分类 / 记忆技巧 / Excalidraw规范）
 │   ├── project-linker/         # 关联 ai-agent-platform 真实实现
-│   └── article-gen/            # 面试内容转多平台技术文章
+│   ├── article-gen/            # 面试内容转多平台技术文章
+│   └── article-publisher/      # 多平台草稿箱一键无损同步 (掘金/知乎/小红书/CSDN等29+平台)
 │
 ├── 00-roadmap/                 # 学习路线 & 进度追踪
 │   └── roadmap.md
@@ -86,7 +87,7 @@ ai-learn/
 5. **资产沉淀与分发**：
    - 笔记全景同步至 `knowledge-site`
    - 高光突破点精炼进 `knowledge-deck`
-   - 优质专题调用 `article-gen` 转化为各平台文章。
+   - 优质专题调用 `article-gen` 转化为各平台文章，并通过 `article-publisher` 直推各大平台草稿箱。
 
 ---
 

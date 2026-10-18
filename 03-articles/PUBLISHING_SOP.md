@@ -61,6 +61,14 @@ python3 .agents/skills/article-publisher/scripts/publish.py sync \
   -c "assets/images/articles/[slug]/cover.png"
 ```
 
+### 4. 跨站图床防盗链避坑（知乎 403 碎图根因与自动解法）
+* **大厂互防暗坑**：
+  * 字节跳动图床（掘金 `byteimg.com`）部署了严格的 Tengine Referer ACL 防盗链规则。当请求头带有 `Referer: https://zhuanlan.zhihu.com` 时，直接返回 `HTTP/2 403: denied by Referer ACL` 拦截！
+  * 同理，知乎图床（`zhimg.com`）也拦截外部 Referer。若简单粗暴地将所有平台混在一起推送，总有一方的图床会被另一方封杀导致草稿箱图片空白破裂！
+* **架构解法（已在 `publish.py` 固化）**：
+  * 脚本内置智能分批调度：当目标平台同时包含 `zhihu` 与其他平台（如 `juejin`）时，**自动将 `zhihu` 拆解为专属知乎图床独立批次**，其余平台走掘金图床批次。
+  * 用户仍只需敲一行命令，后台全自动两全其美，杜绝任何平台出现 403 碎图！
+
 ---
 
 ## 🛡️ 四、 软件工程与人设边界铁律

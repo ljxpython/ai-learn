@@ -5,7 +5,7 @@
 
 | 文章标题 | 草稿日期 | 状态 | 掘金 | 知乎 | 小红书 | CSDN / 博客园 | 慕课网 |
 |----------|----------|------|------|------|--------|------|------|
-| **解密生产级 AI 生图工程：如何用规约引擎、零成本 Linter 与容灾网关把大模型彻底驯服？** | 2026-10-18 | **已同步草稿** 🚀 | [掘金草稿](https://juejin.cn/editor/drafts/7697610123099013155) | [知乎专栏草稿](https://zhuanlan.zhihu.com/p/2095295640985196354/edit) | - | [CSDN草稿](https://editor.csdn.net/md?articleId=168346532) / [博客园草稿](https://i.cnblogs.com/articles/edit;postId=23349141) | [慕课草稿](https://www.imooc.com/article/draft/id/207818) |
+| **解密生产级 AI 生图工程：如何用规约引擎、零成本 Linter 与容灾网关把大模型彻底驯服？** | 2026-10-18 | **已同步草稿** 🚀 | [掘金草稿](https://juejin.cn/editor/drafts/7697610123099013155) | [知乎专栏草稿(图文全)](https://zhuanlan.zhihu.com/p/2095312148960433801/edit) | - | [CSDN草稿](https://editor.csdn.net/md?articleId=168346532) / [博客园草稿](https://i.cnblogs.com/articles/edit;postId=23349141) | [慕课草稿](https://www.imooc.com/article/draft/id/207818) |
 | **自媒体必备的「AI 生图技能」：终于把 AI 画图彻底驯服了！** | 2026-10-17 | 已就绪 | - | - | [小红书](xiaohongshu/publish_ready.md) | - | - |
 
 

@@ -172,17 +172,36 @@ def cmd_sync(file_path: Path, platforms: str, cover: str, title: str, dry_run: b
         else:
             print("[WARN] 目标平台包含小红书但未指定封面，可能导致发布草稿失败！", file=sys.stderr)
 
-    args = ["sync", str(file_path), "-p", platforms]
-    if cover:
-        args.extend(["--cover", cover])
-    if title:
-        args.extend(["--title", title])
-    if dry_run:
-        args.append("--dry-run")
+    # Multi-platform Referer ACL protection:
+    # Zhihu and Juejin enforce strict Referer ACLs. If zhihu is mixed with juejin/others,
+    # juejin CDN returns 403 on zhihu.com. We automatically split zhihu into its own dedicated batch!
+    batches = []
+    if "zhihu" in target_platforms and len(target_platforms) > 1:
+        batches.append(["zhihu"])
+        remaining = [p for p in target_platforms if p != "zhihu"]
+        if remaining:
+            batches.append(remaining)
+        print("[*] 检测到目标包含知乎：自动拆解为专属图床批次，杜绝跨站 Referer ACL 防盗链 403 碎图！")
+    else:
+        batches.append(target_platforms)
 
-    print(f"[*] 开始向目标平台 [{platforms}] 推送草稿...")
-    code = run_wechatsync_stream(args, token, timeout=90)
-    sys.exit(code)
+    exit_code = 0
+    for b_platforms in batches:
+        p_str = ",".join(b_platforms)
+        args = ["sync", str(file_path), "-p", p_str]
+        if cover:
+            args.extend(["--cover", cover])
+        if title:
+            args.extend(["--title", title])
+        if dry_run:
+            args.append("--dry-run")
+
+        print(f"\n[*] 开始向目标批次 [{p_str}] 推送草稿...")
+        code = run_wechatsync_stream(args, token, timeout=90)
+        if code != 0:
+            exit_code = code
+
+    sys.exit(exit_code)
 
 
 def main():

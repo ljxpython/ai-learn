@@ -25,7 +25,7 @@
 💡 专注 AI Agent 落地与高颜值技术手账
 🛠️ 开源 AI 生图/架构规约作者 | 资深 AI 工程师
 📚 从原理到实战：手把手带你玩转 AI 智能体与提效工具
-👇 开源项目与踩坑笔记持续更新中，点击关注不迷路！
+👇 开源项目与手账图解持续更新中，点击关注不迷路！
 ```
 
 ### 💻 2. 掘金 / 知乎 / 慕课网（硬核技术 + 架构底蕴 + 专业背书）
@@ -37,13 +37,13 @@
 开源项目与技术图解见 GitHub: @ljxpython。欢迎同行技术交流与碰撞。
 ```
 
-### 🛠️ 3. CSDN / 博客园（工程踩坑 + 实战记录）
+### 🛠️ 3. CSDN / 博客园（工程演进 + 架构实战）
 
 ```text
-程序员 / AI 应用开发工程师。热爱 Python 与大模型全栈架构，专注大模型工程化落地、企业级 Agent 开发、高并发与性能调优。记录每一个真实的踩坑与架构演进实录。
+程序员 / AI 应用开发工程师。热爱 Python 与大模型全栈架构，专注大模型工程化落地、企业级 Agent 开发、高并发与性能调优。记录每一个真实的架构演进与落地实录。
 ```
 
-### ⚡ 4. 一句话极简签名（通用单行版）
+### ⚡ 4. 一句话极简签名（通用单行版 / 个人标签）
 
 ```text
 用真实生产代码与视觉图解击穿 AI 八股文 | AI 应用架构师
@@ -51,7 +51,24 @@
 
 ---
 
-## 🎨 三、 视觉资产矩阵
+## 🎨 三、 视觉资产快速提取
 
-* **专属头像**：[`assets/images/profile/avatar.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/profile/avatar.png)（1024x1024 1:1）
-* **全景背景图**：[`assets/images/profile/banner.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/profile/banner.png)（1536x1024 宽屏）
+所有超清资产已生成并保存在本地资产库中：
+
+| 资产类型 | 物理分辨率 | 适用场景 | 本地绝对路径 | 一键直达命令 |
+| :--- | :--- | :--- | :--- | :--- |
+| **极客头像** | `1254x1254` (1:1) | 各平台个人头像 | [`assets/images/profile/avatar.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/profile/avatar.png) | `open "assets/images/profile"` |
+| **全景背景图** | `1536x1024` (3:2) | 知乎/掘金/小红书主页背景横幅 | [`assets/images/profile/banner.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/profile/banner.png) | `open "assets/images/profile"` |
+
+---
+
+## 📋 四、 各大平台个人资料录入速查表（照着填即可）
+
+| 平台 | 个人资料设置页面直达 | 推荐昵称 | 头像 / 背景 | 推荐填入简介 |
+| :--- | :--- | :--- | :--- | :--- |
+| **掘金** | [掘金个人资料设置](https://juejin.cn/user/settings/profile) | `佳欣的AI工坊` | 上传 `avatar.png` / `banner.png` | 复制上方【第 2 节：掘金/知乎版】 |
+| **知乎** | [知乎个人资料修改](https://www.zhihu.com/people/edit) | `佳欣的AI工坊` | 上传 `avatar.png` / `banner.png` | 复制上方【第 2 节：掘金/知乎版】 |
+| **CSDN** | [CSDN个人中心修改](https://i.csdn.net/#/user-center/profile) | `佳欣的AI工坊` | 上传 `avatar.png` | 复制上方【第 3 节：CSDN版】 |
+| **博客园** | [博客园基本设置](https://i.cnblogs.com/settings) | `佳欣的AI工坊` | 上传 `avatar.png` | 复制上方【第 3 节：CSDN版】 |
+| **慕课网** | [慕课个人设置中心](https://www.imooc.com/user/setprofile) | `佳欣的AI工坊` | 上传 `avatar.png` | 复制上方【第 2 节：掘金/知乎版】 |
+| **小红书** | 小红书手机 App ➔ 我 ➔ 编辑资料 | `佳欣的AI工坊` | 上传 `avatar.png` / `banner.png` | 复制上方【第 1 节：小红书版】 |

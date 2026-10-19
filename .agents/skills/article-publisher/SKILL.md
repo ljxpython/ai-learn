@@ -82,14 +82,16 @@ python3 .agents/skills/article-publisher/scripts/publish.py list
 ```
 输出各平台是否已在 Chrome 中保持登录状态。
 
-### 2. 一键同步到掘金与知乎草稿箱
+### 2. 默认一键同步到长文四大核心平台草稿箱（知乎、掘金、CSDN、博客园）
+> **铁律**：除小红书走独立图文轨外，技术长文平台**绝对收敛至四大核心阵地（`zhihu,juejin,csdn,cnblogs`）**，默认无需输入 `-p`，其他平台暂时不发布！
+
 ```bash
 python3 .agents/skills/article-publisher/scripts/publish.py sync \
-  "03-articles/drafts/my-article.md" \
-  -p juejin,zhihu
+  "03-articles/drafts/my-article.md"
 ```
 - **自动标题**：脚本会自动提取 Markdown 首行 `# 标题` 作为发布标题。
-- **返回结果**：输出各平台草稿箱直达编辑链接。
+- **自动防盗链**：知乎自动拆解为专属批次优先转存知乎原生图床，其余平台转存掘金原生图床，杜绝碎图。
+- **返回结果**：输出各大平台草稿箱直达编辑链接。
 
 ### 3. 发布图文到小红书（自动提取封面）
 ```bash

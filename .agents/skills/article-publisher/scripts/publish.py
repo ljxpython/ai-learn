@@ -214,7 +214,7 @@ def main():
     # Subcommand: sync
     parser_sync = subparsers.add_parser("sync", help="同步文章到各平台草稿箱")
     parser_sync.add_argument("file", help="待发布的 Markdown 或 HTML 文件路径")
-    parser_sync.add_argument("-p", "--platforms", default="juejin,zhihu", help="目标平台逗号分隔（默认: juejin,zhihu）")
+    parser_sync.add_argument("-p", "--platforms", default="zhihu,juejin,csdn,cnblogs", help="目标平台逗号分隔（默认收敛四大平台: zhihu,juejin,csdn,cnblogs）")
     parser_sync.add_argument("-c", "--cover", default="", help="封面图绝对路径或 URL（小红书强制必须）")
     parser_sync.add_argument("-t", "--title", default="", help="自定义文章标题（默认从首行 # 提取）")
     parser_sync.add_argument("--dry-run", action="store_true", help="演练模式，仅预览不实际推送")

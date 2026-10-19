@@ -26,12 +26,15 @@
 | **Style 09** | **治愈系彩泥定格手账指南**<br>*(Claymation Plasticine Studygram)* | 3D 黏土捏制质感、小熊/小兔吉祥物、立体泥塑徽章、彩色黏土滚边框、对比卡片 | 小红书高赞爆款、AI 核心玩法/设置深度盘点、超高亲和力图文套图 | 用户参考图 10, 11 |
 | **Style 10** | **复古线圈素描学霸手记**<br>*(Vintage Spiral Sketchbook)* | 真实金属双螺旋线圈装订、复古泛黄草稿纸、细腻蘸水黑墨水笔素描排线、焦糖淡彩高光、伏案少女 | 学习方法论、时间管理、高分自律指南、AI 工具实战上手与日程表 | 用户参考图 12 |
 | **Style 11** | **萌系马卡龙手账清单**<br>*(Kawaii Pastel Planner Checklist)* | 米白方格纸、活页金属孔、马卡龙和纸胶带、2x4 宫格马卡龙卡片、萌系小熊白兔贴纸 | 极简生活/断舍离、考点避坑清单、日常自律清单、小红书高赞手账 | 用户参考图 13 |
+| **Style 12** | **工坊极客小机器人手账卡**<br>*(Geek Workshop Robot Sketchnote)* | 16:9横屏宽屏、深蓝圆角大外框、浅米白微横线底纸、右上方悬浮白蓝小机器人划重点引线、3大纯白圆角卡片、左上工坊胶带标签、底部💡架构真理横幅 | 生产落地万能公式、避坑排错清单、章节知识小结、博客宽屏长文插图 | 生产样本图 20 |
 
 ---
 
 ## 🌟 知识卡片设计红线与黄金五要素 (The Golden 5 Elements)
 
-> 吸收自行业标杆图 [`ref-14-knowledge-card-golden-5-elements.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-14-knowledge-card-golden-5-elements.jpg)，作为本项目所有视觉模板与提示词编译的**底层防翻车公理**：
+> 吸收自行业标杆图 `ref-14-knowledge-card-golden-5-elements.jpg`，作为本项目所有视觉模板与提示词编译的**底层防翻车公理**：
+>
+> ![知识卡片黄金五要素规范](images/style-references/ref-14-knowledge-card-golden-5-elements.jpg)
 
 ```
 五要素全覆盖 ＝ 内容精准 ＋ 风格统一 ＋ 版式干净 ＋ 配色高级 ＋ 细节精致
@@ -124,7 +127,9 @@ STRICT NEGATIVE: NO 3D rendering, NO glossy textures, NO shadows, NO hole punche
 ### 三、 生产验证案例库
 
 #### 案例 1：AI 基础 8 大核心概念 (8-Grid AI Map)
-* **资产路径**：[`assets/images/style-samples/sample-05-mimic-user-img1.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-05-mimic-user-img1.png)
+* **生产案例**：`sample-05-mimic-user-img1.png`（一图看懂 AI 的 8 个概念）
+
+![AI 基础 8 大核心概念](images/style-samples/sample-05-mimic-user-img1.png)
 * **参数配置**：
   * 主标题：`一图看懂 AI 的` + `8 个概念`
   * 模块覆盖：01 Token, 02 Prompt 提示词, 03 Context 上下文, 04 RAG 检索增强生成, 05 Agent 智能体, 06 MCP, 07 Skills 技能, 08 Harness 框架。
@@ -167,7 +172,9 @@ Section header box with a warm khaki-brown highlighter brush stroke: `三、{SEC
 Crisp pen-and-paper illustration, authentic handwritten Chinese characters, soft pastel highlighter brush strokes, fine charcoal line art, spacious elegant layout.
 STRICT NEGATIVE: NO 3D rendering, NO glossy textures, NO shadows, NO hole punchers, NO binder rings, NO spiral coils, NO blurry text, NO dirty stains, NO dark backgrounds.
 ```
-* **生产案例**：[`sample-07-mimic-user-img3.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-07-mimic-user-img3.png)（大模型 Agent 认知架构设计与落地）。
+* **生产案例**：`sample-07-mimic-user-img3.png`（大模型 Agent 认知架构设计与落地）
+
+![大模型 Agent 认知架构设计与落地](images/style-samples/sample-07-mimic-user-img3.png)
 
 ---
 
@@ -207,7 +214,9 @@ Full-width ribbon strip labeled `本套目录`, followed by 10 numbered circular
 Crisp pen-and-paper illustration, authentic dark navy blue ink linework, charming handwritten Chinese characters, white and blue contrast, stick-figure illustrations.
 STRICT NEGATIVE: NO 3D rendering, NO photorealistic objects, NO metallic textures, NO dark cyberpunk backgrounds, NO blurry handwriting, NO messy stains.
 ```
-* **生产案例**：[`sample-08-mimic-user-img4.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-08-mimic-user-img4.png)（AI Agent 智能体架构完全上手指南）。
+* **生产案例**：`sample-08-mimic-user-img4.png`（AI Agent 智能体架构完全上手指南）
+
+![AI Agent 智能体架构完全上手指南](images/style-samples/sample-08-mimic-user-img4.png)
 
 ---
 
@@ -244,7 +253,9 @@ Bottom-Right: Tilted warm-yellow square sticky note taped with green washi tape,
 Crisp pen-and-paper illustration, authentic handwritten Chinese characters, authentic spiral coil binding, delicate washi tape textures, pastel markers, clean scrapbook aesthetic.
 STRICT NEGATIVE: NO 3D photorealism, NO dark backgrounds, NO blurry handwriting, NO messy stains, NO distorted robot, NO unreadable overlapping text.
 ```
-* **生产案例**：[`sample-09-mimic-user-img5.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-09-mimic-user-img5.png)（AI Agent 落地万能公式·核心工具协议）。
+* **生产案例**：`sample-09-mimic-user-img5.png`（AI Agent 落地万能公式·核心工具协议）
+
+![AI Agent 落地万能公式·核心工具协议](images/style-samples/sample-09-mimic-user-img5.png)
 
 ---
 
@@ -284,7 +295,9 @@ Right Card: Warm yellow sticky note taped with green washi tape, titled `小提�
 Soft watercolor pastel illustration, charming anime girl characters, aesthetic studygram stationery, legible handwritten Chinese text, delicate dashed lines.
 STRICT NEGATIVE: NO 3D rendering, NO photorealistic objects, NO metallic textures, NO dark cyberpunk backgrounds, NO blurry text, NO distorted faces, NO ugly anatomy, NO dirty stains.
 ```
-* **生产案例**：[`sample-10-mimic-user-img6.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-10-mimic-user-img6.png)（怎么用 AI 打造高薪个人智能体）。
+* **生产案例**：`sample-10-mimic-user-img6.png`（怎么用 AI 打造高薪个人智能体）
+
+![怎么用 AI 打造高薪个人智能体](images/style-samples/sample-10-mimic-user-img6.png)
 
 ---
 
@@ -359,7 +372,9 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 ### 三、 生产验证案例库
 
 #### 案例 1：AI Agent 生产级架构全景图 (6-Tier End-to-End Blueprint)
-* **资产路径**：[`assets/images/style-samples/sample-13-mimic-enterprise-arch-iceblue.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-13-mimic-enterprise-arch-iceblue.png)
+* **生产案例**：`sample-13-mimic-enterprise-arch-iceblue.png`（AI Agent 生产级架构全景图）
+
+![AI Agent 生产级架构全景图](images/style-samples/sample-13-mimic-enterprise-arch-iceblue.png)
 * **参数配置**：
   * 主标题：`AI Agent 生产级架构全景图`
   * 副标题：`从交互入口、智能体编排到模型、知识、安全、观测与基础设施的端到端生产体系`
@@ -383,7 +398,9 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 ### 二、 通用提示词母版
 * **模板 ID**：`diagnostic-architecture-stack`
-* **生产案例**：[`sample-14-diagnostic-architecture-stack.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-14-diagnostic-architecture-stack.png)（企业级 AI Agent 架构自检全景图）。
+* **生产案例**：`sample-14-diagnostic-architecture-stack.png`（企业级 AI Agent 架构自检全景图）
+
+![企业级 AI Agent 架构自检全景图](images/style-samples/sample-14-diagnostic-architecture-stack.png)
 
 ---
 
@@ -406,7 +423,9 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 ### 二、 通用提示词母版
 * **模板 ID**：`linear-skills-pipeline`
-* **生产案例**：[`sample-15-linear-skills-pipeline.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-15-linear-skills-pipeline.png)（AI Agent Skills 技术架构全景图）。
+* **生产案例**：`sample-15-linear-skills-pipeline.png`（AI Agent Skills 技术架构全景图）
+
+![AI Agent Skills 技术架构全景图](images/style-samples/sample-15-linear-skills-pipeline.png)
 
 ---
 
@@ -427,8 +446,13 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 ### 二、 通用提示词母版
 * **模板 ID**：`claymation-studygram-guide`
 * **生产案例**：
-  - P1 封面：[`sample-16-claymation-p1-cover-v2.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-16-claymation-p1-cover-v2.png)
-  - P2 正文：[`sample-17-claymation-p2-content-v2.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-17-claymation-p2-content-v2.png)
+  - **P1 封面**：`sample-16-claymation-p1-cover-v2.png`
+
+    ![P1 封面](images/style-samples/sample-16-claymation-p1-cover-v2.png)
+
+  - **P2 正文**：`sample-17-claymation-p2-content-v2.png`
+
+    ![P2 正文](images/style-samples/sample-17-claymation-p2-content-v2.png)
 
 ---
 
@@ -449,7 +473,9 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 ### 二、 通用提示词母版
 * **模板 ID**：`vintage-sketchbook-studygram`
-* **生产案例**：[`sample-18-vintage-sketchbook-studygram.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-18-vintage-sketchbook-studygram.png)（拒绝拖延！暑期弯道超车学习法）。
+* **生产案例**：`sample-18-vintage-sketchbook-studygram.png`（拒绝拖延！暑期弯道超车学习法）
+
+![拒绝拖延！暑期弯道超车学习法](images/style-samples/sample-18-vintage-sketchbook-studygram.png)
 
 ---
 
@@ -471,7 +497,80 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 ### 二、 通用提示词母版
 * **模板 ID**：`kawaii-planner-checklist`
-* **生产案例**：[`sample-19-kawaii-planner-declutter-checklist.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-samples/sample-19-kawaii-planner-declutter-checklist.png)（断舍离超全清单：照着扔就对了）。
+* **生产案例**：`sample-19-kawaii-planner-declutter-checklist.png`（断舍离超全清单：照着扔就对了）
+
+![断舍离超全清单：照着扔就对了](images/style-samples/sample-19-kawaii-planner-declutter-checklist.png)
+
+---
+
+## 📝 Style 12: 工坊极客小机器人手账卡规范 (Geek Workshop Robot Sketchnote)
+
+### 一、 核心视觉基因与排版铁律
+
+1. **博客长文 16:9 横版宽屏视口（`1536x864`）**：
+   * 专为掘金、知乎、CSDN 与公众号等技术长文量身打造。
+   * 彻底告别竖版撑破浏览器单屏的痛点，一行 3 大核心卡片水平排开，高密度吸收。
+2. **IP 伴侣协同叙事（悬浮小机器人划重点）**：
+   * 右上方悬浮白蓝极客小机器人（与作者头像 1:1 呼应），戴耳机天线，发光弯眼笑脸，探出手指或拉出蓝色手绘弧形引线指向重点。
+   * 自带蓝色圆角气泡对话框（如：`小助手划重点：绝不轻信口头承诺，只认测试通过！`）。
+3. **品牌胶带印章（左上角工坊标识）**：
+   * 左上角贴有半透明牛皮纸质感胶带，手写文字：`佳欣的AI工坊 ✧ @ljxpython`。
+4. **色彩体系与作者连帽衫同频**：
+   * 采用深海蓝（Navy Blue `#1E293B`）手绘粗圆角外框。
+   * 内部为浅米白温暖横线纸底衬（`#FDFBF7`），纯白卡片托底，搭配天蓝（Tech Sky Blue `#38BDF8`）、活力暖橙与鲜亮朱红重点标注。
+5. **底部横幅架构真理收口**：
+   * 底部横跨满宽的长条手绘卡片，左侧黄色手绘发光灯泡 💡，右侧为核心架构哲学金句，重点词汇带双层朱红下划线。
+
+---
+
+### 二、 通用提示词母版 (Prompt Template - 槽位化泛用版)
+
+```text
+An ultra charming, authentic Japanese stationery style geek workshop sketchnote knowledge card, horizontal 16:9 aspect ratio (1536x864).
+[ARTISTIC STYLE & PALETTE]
+Warm cream-white stationery notebook paper background with very faint horizontal ruled lines. Crisp hand-drawn dark navy blue ink linework (#1E293B), tech sky-blue highlights (#38BDF8), vibrant orange accent brush strokes, and pure white cards. The visual aesthetic directly matches the 'Geek Workshop Desk' anime style with warm studio atmosphere.
+Enclosed in thick hand-drawn dark navy blue rounded rectangle border.
+
+[TOP-LEFT BRANDING]
+Semi-transparent washi tape in top-left: `佳欣的AI工坊 ✧ @ljxpython`.
+
+[TOP HEADER]
+Header in bold dark navy ink: `{MAIN_TITLE}` with orange brush highlight stroke behind key words.
+Subtitle in neat hand-lettering: `{SUBTITLE}`.
+
+[CENTER GRID: 3 EQUAL ROUNDED CARDS]
+The middle area is divided into 3 spacious pure white rounded cards with fine dark navy outlines:
+- Card 1 (Left): Red circular badge `①`, bold title `{CARD1_TITLE}`. {CARD1_DOODLE_DESC}. Bullet points: {CARD1_BULLETS}.
+- Card 2 (Center): Blue circular badge `②`, bold title `{CARD2_TITLE}`. {CARD2_DOODLE_DESC}. Bullet points: {CARD2_BULLETS}.
+- Card 3 (Right): Green circular badge `③`, bold title `{CARD3_TITLE}`. {CARD3_DOODLE_DESC}. Bullet points: {CARD3_BULLETS}.
+
+[MASCOT ANNOTATION - FLOATING MINI AI ROBOT]
+Floating above the right side of the cards is an adorable miniature white-and-sky-blue AI robot assistant with cute headphone antennae and smiling glowing cyan LED curved eyes. It points a hand-drawn arrow toward Card 3 with a light-blue speech bubble: `{ROBOT_SPEECH_BUBBLE}`.
+
+[BOTTOM FOOTER BANNER]
+At the bottom spanning the full width, a clean rounded horizontal bar. On the left, a bright yellow glowing hand-drawn lightbulb `💡`. In the center, prominent handwritten text: `{FOOTER_CORE_TRUTH}` with red double underlines under `{KEY_PHRASE}`.
+
+[CONSTRAINTS & NEGATIVES]
+100% pure simplified Chinese text, razor sharp legible handwriting, high contrast, clean spacious margins, charming geek workshop vibe.
+STRICT NEGATIVE: NO English gibberish, NO messy garbled letters, NO 3D metallic textures, NO dark cyberpunk backgrounds, NO blur, NO distorted robot anatomy.
+```
+
+---
+
+### 三、 生产验证案例库
+
+#### 案例 1：AI Harness 生产落地万能公式 (3-Card Horizontal Sketchnote)
+* **生产案例**：`assets/images/sample-geek-robot-workshop-card.png`
+
+![AI Harness 生产落地万能公式](images/sample-geek-robot-workshop-card.png)
+
+* **参数配置**：
+  * 标题：`AI Harness 生产落地万能公式` | 副标：`让 AI 编程告别失控的三个确定性基石`
+  * 模块 1：`状态机硬约束`（四阶段闭环、禁止隐式重试）
+  * 模块 2：`模型分级路由`（小模型搜索、大模型决策）
+  * 模块 3：`沙盒代码验收`（隔离环境、只认单元测试真实输出）
+  * 机器人划重点：`小助手划重点：绝不轻信口头承诺，只认测试通过！`
+  * 底部总结：`架构真理：好的 Harness 不是让 AI 更聪明，而是让 AI 犯错的成本归零。`
 
 ---
 
@@ -480,20 +579,61 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 用户提供的标准参考样本已永久归档至 `assets/images/style-references/`：
 
-1. **[`ref-01-sketchnote-8-concepts.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-01-sketchnote-8-concepts.jpg)**：手绘手账知识地图（8 宫格规范标杆）
-2. **[`ref-02-system-architecture-xinyuan.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-02-system-architecture-xinyuan.png)**：工业级高密度系统全景蓝图（暂略过）
-3. **[`ref-03-studygram-swiss-grid.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-03-studygram-swiss-grid.jpg)**：现代学院派方格手绘笔记
-4. **[`ref-04-binder-notebook-guide.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-04-binder-notebook-guide.jpg)**：极客活页草稿本手记
-5. **[`ref-05-spiral-notebook-scrapbook.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-05-spiral-notebook-scrapbook.jpg)**：线圈手账便签拼贴风
-6. **[`ref-06-cute-anime-sketchnote-guide.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-06-cute-anime-sketchnote-guide.jpg)**：可爱日漫少女手账笔记风（5步步骤指南）
-7. **[`ref-07-enterprise-agent-production-arch.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-07-enterprise-agent-production-arch.jpg)**：企业级生产架构全景图（左右双翼支撑 + 中间6层核心堆栈）
-8. **[`ref-08-enterprise-agent-interactive-stack.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-08-enterprise-agent-interactive-stack.jpg)**：全景自检互动式架构栈（痛点警示胶囊 + 底部评论互动条）
-9. **[`ref-09-agent-skills-pipeline-flow.png`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-09-agent-skills-pipeline-flow.png)**：单列流式五层技能流水线（5 步线性递进 + 2×4 技能库矩阵）
-10. **[`ref-10-claymation-studygram-p1.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-10-claymation-studygram-p1.jpg)**：治愈系彩泥手账套图 P1 封面（小熊探头 + 玩法 1 权限三档）
-11. **[`ref-11-claymation-studygram-p2.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-11-claymation-studygram-p2.jpg)**：治愈系彩泥手账套图 P2 正文（玩法 2 引导修改 + 玩法 3 Plan 规划模式）
-12. **[`ref-12-vintage-spiral-girl-studygram.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-12-vintage-spiral-girl-studygram.jpg)**：复古线圈素描学霸手记（左金属线圈 + 精细黑墨水笔素描 + 焦糖淡彩 + 伏案少女）
-13. **[`ref-13-declutter-checklist-studygram.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-13-declutter-checklist-studygram.jpg)**：萌系马卡龙手账清单（米白方格纸 + 2x4 共8宫格马卡龙卡片 + 萌系小熊白兔贴纸）
-14. **[`ref-14-knowledge-card-golden-5-elements.jpg`](file:///Users/lijiaxin/PyCharmMiscProject/ai-research/ai-learn/assets/images/style-references/ref-14-knowledge-card-golden-5-elements.jpg)**：知识卡片设计黄金五要素规范（内容精准、风格统一、版式干净、配色高级、细节精致）
+1. **`ref-01-sketchnote-8-concepts.jpg`**：手绘手账知识地图（8 宫格规范标杆）
+
+   ![ref-01](images/style-references/ref-01-sketchnote-8-concepts.jpg)
+
+2. **`ref-02-system-architecture-xinyuan.png`**：工业级高密度系统全景蓝图
+
+   ![ref-02](images/style-references/ref-02-system-architecture-xinyuan.png)
+
+3. **`ref-03-studygram-swiss-grid.jpg`**：现代学院派方格手绘笔记
+
+   ![ref-03](images/style-references/ref-03-studygram-swiss-grid.jpg)
+
+4. **`ref-04-binder-notebook-guide.jpg`**：极客活页草稿本手记
+
+   ![ref-04](images/style-references/ref-04-binder-notebook-guide.jpg)
+
+5. **`ref-05-spiral-notebook-scrapbook.jpg`**：线圈手账便签拼贴风
+
+   ![ref-05](images/style-references/ref-05-spiral-notebook-scrapbook.jpg)
+
+6. **`ref-06-cute-anime-sketchnote-guide.jpg`**：可爱日漫少女手账笔记风（5步步骤指南）
+
+   ![ref-06](images/style-references/ref-06-cute-anime-sketchnote-guide.jpg)
+
+7. **`ref-07-enterprise-agent-production-arch.jpg`**：企业级生产架构全景图（左右双翼支撑 + 中间6层核心堆栈）
+
+   ![ref-07](images/style-references/ref-07-enterprise-agent-production-arch.jpg)
+
+8. **`ref-08-enterprise-agent-interactive-stack.jpg`**：全景自检互动式架构栈（痛点警示胶囊 + 底部评论互动条）
+
+   ![ref-08](images/style-references/ref-08-enterprise-agent-interactive-stack.jpg)
+
+9. **`ref-09-agent-skills-pipeline-flow.png`**：单列流式五层技能流水线（5 步线性递进 + 2×4 技能库矩阵）
+
+   ![ref-09](images/style-references/ref-09-agent-skills-pipeline-flow.png)
+
+10. **`ref-10-claymation-studygram-p1.jpg`**：治愈系彩泥手账套图 P1 封面（小熊探头 + 玩法 1 权限三档）
+
+    ![ref-10](images/style-references/ref-10-claymation-studygram-p1.jpg)
+
+11. **`ref-11-claymation-studygram-p2.jpg`**：治愈系彩泥手账套图 P2 正文（玩法 2 引导修改 + 玩法 3 Plan 规划模式）
+
+    ![ref-11](images/style-references/ref-11-claymation-studygram-p2.jpg)
+
+12. **`ref-12-vintage-spiral-girl-studygram.jpg`**：复古线圈素描学霸手记（左金属线圈 + 精细黑墨水笔素描 + 焦糖淡彩 + 伏案少女）
+
+    ![ref-12](images/style-references/ref-12-vintage-spiral-girl-studygram.jpg)
+
+13. **`ref-13-declutter-checklist-studygram.jpg`**：萌系马卡龙手账清单（米白方格纸 + 2x4 共8宫格马卡龙卡片 + 萌系小熊白兔贴纸）
+
+    ![ref-13](images/style-references/ref-13-declutter-checklist-studygram.jpg)
+
+14. **`ref-14-knowledge-card-golden-5-elements.jpg`**：知识卡片设计黄金五要素规范（内容精准、风格统一、版式干净、配色高级、细节精致）
+
+    ![ref-14](images/style-references/ref-14-knowledge-card-golden-5-elements.jpg)
 
 
 ---
@@ -502,22 +642,76 @@ STRICT NEGATIVE: NO purple, NO violet, NO lavender, NO 3D rendering, NO photorea
 
 为杜绝手动或自动发布时被各大自媒体平台截断或弹窗阻断，所有文章生成与排版必须严格执行以下物理红线：
 
-### 📕 1. 小红书 (Xiaohongshu) 铁律
+### 📕 1. 小红书 (Xiaohongshu) 独立赛道铁律与美少女手账体系
+
+#### A. 核心定位与视觉人设（彻底与技术博客轨分离）
+- **长文博客轨（掘金/知乎/CSDN/公众号）**：深蓝卫衣黑框眼镜极客青年 + Style 12（16:9 横屏）；
+- **小红书独立图文轨**：**日漫美少女学霸手账系列 (Anime Studygram Girl)**，治愈系马卡龙配色，高亲和力、元气学霸形象。
+
+#### B. 核心参数与发布红线
 
 | 维度 | 官方硬性限制 | 老王工程建议值 (防翻车) | 核心暗坑与技术细节 |
 | :--- | :--- | :--- | :--- |
 | **标题字数** | **≤ 20 字符** | **16 ~ 19 字符** | 超过 20 字符直接弹窗阻止发布！所有标点、空格、Emoji 全计入 1 字符。建议留 1 字符安全边距。 |
 | **正文字数** | **≤ 1000 字符** | **≤ 850 字符** | **暗坑预警**：小红书后台统计**全量字符**（包含所有 `\n` 回车换行符、空格、标点与 Emoji）。若空行过多，纯文本 600 字也会爆破 1000 字上限导致阻断。编写时必须用脚本校验总长度 ≤ 850 字符。 |
-| **图片规格** | 1 ~ 9 张（最多9张） | **严格 9 张**（首图吸睛+案例） | **强制分辨率：`1152x1536`（严格 3:4）**！<br>⚠️ **黑边死穴警示**：千万别用 `1024x1536`（2:3）！小红书 App 图片容器按 3:4 锁死在 632px 高度。传 2:3 会因为过高而等比缩窄，导致**左右两边被强制塞入各 26px 黑边（Letterboxing）**，无法铺满屏幕！只有 `1152x1536` 才能左右贴边 100% 满屏显示！ |
-| **排版张力** | - | **满幅出血排版 (Full-Bleed)** | 严禁"卡片套卡片"式巨大留白！标题和核心视觉元素必须横向贴满画面两端，拒绝缩小居中。 |
+| **图片规格** | 1 ~ 9 张（最多9张） | **3 ~ 9 张**（首图吸睛+多步拆解+避坑清单） | **强制分辨率：`1152x1536`（严格 3:4 满屏）**！<br>⚠️ **黑边死穴警示**：千万别用 `1024x1536`（2:3）！小红书 App 图片容器按 3:4 锁死在 632px 高度。传 2:3 会因为过高而等比缩窄，导致**左右两边被强制塞入各 26px 黑边（Letterboxing）**！只有 `1152x1536` 才能左右贴边 100% 满屏显示！ |
+| **知识密度** | - | **高密度手账卡片** | 坚决杜绝空洞大头贴！每张图片内必须充满**4~5个核心知识卡片、S型猫爪流程轨迹、打勾清单项、架构拓扑或万能公式**。 |
 | **资产隔离** | - | `assets/images/xiaohongshu/<slug>/` | 每篇图文必须建立专属文件夹，图片命名严格为 `p01-cover.png`, `p02-xxx.png` ... `p09-xxx.png`，在 Finder 中按 `Cmd+A` 即可按序批量拖拽上传，绝不乱序。 |
-| **话题标签** | 计入正文总字数 | **4 ~ 6 个标签** | 放置在正文底部（如 `#自媒体配图 #AI绘画`），标签字符一并计入 1000 字配额。 |
+| **话题标签** | 计入正文总字数 | **4 ~ 6 个标签** | 放置在正文底部（如 `#AI应用开发 #程序员日常 #手账指南`），标签字符一并计入 1000 字配额。 |
+
+#### C. 小红书美少女角色图库 (Character Gallery)
+在后续撰写小红书笔记时，可根据技术专题类型从以下 4 款美少女 IP 中挑选作为封面与知识卡主角：
+
+| 角色编号 | 角色代号 & 对应形象 | 适合技术专题 | 资产路径 | 视觉特征 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Char 01** | **元气紫卫衣 · 高马尾学霸**<br>*(Lavender Ponytail)* | AI Agent 认知循环、思维链解构、方法论指南 | `assets/images/xiaohongshu/characters/char-01-ponytail-lavender.png` | 薰衣草紫连帽衫、高马尾、圆黑框眼镜、单眼眨眼握拳、元气满满 |
+| **Char 02** | **薄荷活力 · 双马尾刷题少女**<br>*(Mint Twintails)* | RAG 检索增强、面试高频八股真题、算法速查 | `assets/images/xiaohongshu/characters/char-02-twintail-mint.png` | 薄荷绿卫衣、齐刘海双马尾、金丝细圆框眼镜、手持荧光笔、甜美wink |
+| **Char 03** | **知性深蓝 · 短发极客少女**<br>*(Navy Bob Geek)* | 系统高可用设计、架构设计、高并发与避坑防崩溃 | `assets/images/xiaohongshu/characters/char-03-bob-geek.png` | 深蓝粗麻花毛衣、齐肩波波头短发微翘、大黑框眼镜、颈挂金属大耳机、托腮睿智笑 |
+| **Char 04** | **元气暖黄 · 丸子头工科少女**<br>*(Warm Bun Tinkerer)* | 大模型微调/量化、Prompt 工程调试、生产实操踩坑 | `assets/images/xiaohongshu/characters/char-04-bun-warm.png` | 暖黄工装衬衫、丸子头插黄色铅笔、大黑豹纹圆框眼镜、笑逐颜开、动手能力超强 |
+
+#### D. 小红书图文流三大标配板块
+1. **P01 封面**：治愈工坊美少女书桌（超大加粗手绘日漫中文标题 + 浮空白蓝小机器人 + 和纸胶带）；
+2. **P02~P0X 核心拆解**：**Style 05（日漫美少女 S 型猫爪通关手账）**，S型虚线穿过 5 个步骤卡片，配少女不同姿态插画；
+3. **P末 落地清单 & 开源底座展台**：**Style 11（萌系马卡龙立体便签打卡卡 ＋ 开源项目展台）**：
+   - 上半部：4 大立体马卡龙便利贴自检打勾清单；
+   - 下半部：**【官方开源项目 ai-agent-platform 豪华展台】**（藏青深蓝底金色发光大卡片，标明三层微服务拓扑 `前端平台 web` ➔ `后端服务 api` ➔ `执行引擎 runtime`、3 大核心亮点与 GitHub 直通车）；
+   - 底部：少女趴桌甜笑 + 迷你 AI 机器人拉出卷轴横幅。
 
 ---
 
-### 💻 2. 掘金 / 知乎 / CSDN (长文平台) 规约
+### 💻 2. 知乎 / 掘金 / CSDN / 博客园 (长文四大核心平台) 规约
 
+- **平台收敛铁律**：长文技术博客**绝对收敛至【知乎、掘金、CSDN、博客园】四大核心阵地**，其他平台（如微信公众号、语雀、简书、头条等）暂时不发布，杜绝精力分散。
 - **标题**：建议 25~35 字，包含场景痛点与技术关键词。
-- **正文**：支持完整 Markdown 语法与代码块（推荐 2000~4500 字技术深度长文）。
-- **图片**：支持 16:9 宽屏架构图或 Mermaid/Excalidraw 矢量图。
-- **发布渠道**：优先使用 `WechatSync` 一键同步草稿箱，无缝保留图片与排版。
+- **正文**：支持完整 Markdown 语法与代码块（推荐 2000~4500 字技术深度长文），严格剥离 AI 油腻感（遵守 humanizer 规范）。
+- **配图铁律（除小红书外全线锁定 Style 12）**：
+  - **首图 Hero Banner**：工坊治愈手账动漫风（戴黑框眼镜穿深蓝卫衣的极客青年 + 悬浮白蓝小AI机器人敲代码，横版 16:9 `1536x864`）；
+  - **章节小结与知识卡片**：**强制锁定「Style 12：工坊极客小机器人手账卡 (Geek Workshop Robot Sketchnote)」**，16:9 宽屏（`1536x864`），左上角带 `佳欣的AI工坊 ✧ @ljxpython` 胶带，右上角悬浮白蓝小机器人拉引线划重点，纯中文零乱码，严禁插入竖版 2:3/3:4 撑破单屏；
+  - **系统级宏观拓扑**：凡涉及端到端系统架构、复杂流程、状态机，**一律强制调用 `/archify` 生成交互式 SVG/HTML**（收录至 `assets/architecture/`），坚决弃用扩散大模型生图。
+- **发布渠道**：使用 `WechatSync` 一键同步到四大平台草稿箱，无缝保留图片与排版。
+
+---
+
+### 🛡️ 3. 技术长文配图心流节奏与生图字形防翻车铁律 (Visual Cadence & Typography Defense)
+
+#### A. 视觉心流节奏（因文施策，拒绝疲劳）
+- **章节脉络自由舒展**：严禁八股套路，具体文章的大纲结构、推导深度根据具体技术痛点和场景自由设计（如排错排查类、架构剖析类、源码解密类、选型对比类各有各的逻辑流）；
+- **动态知识配图节奏**：严禁连续多个小节全是高密度纯文本。根据内容密度自然断句，通常**每输出 2~3 个核心概念或深度模块后，适时插入一张 Style 12 知识小结卡片**做认知休整与干货锚定；
+- **篇末终极结案**：全篇总结落地章节末尾，**配备一张提炼核心工程哲学的万能公式卡**。
+
+#### B. 中文生图字形防翻车六大原则（彻底消灭错别字与笔画形变）
+大模型在绘制中文时极易出现形近字混淆与粘连（如“立宪”变“立志”、“踩坑”变“踩坊”、“向量”变“向重”）。出图必须严格执行以下工程防御：
+1. **高频高容错字原则**：
+   - 坚决杜绝在卡片中放入笔画极其繁复或生僻易混淆的词组；
+   - 统一选用笔画稳固、高频常见的标准字（如：“确立规则”替代“立宪定规”，“实战打磨”替代“踩坑踩出”，“结构化文件”替代“复杂向量库”）；
+2. **气泡框文案极度克制**：
+   - 悬浮小机器人气泡框文案必须控制在 **≤ 15 字**，字大句短，禁止塞入复杂复合句；
+3. **文本必须用反引号包裹**：
+   - 画面中所有需要绘制的文字必须用反引号（`` ` ``）严格包裹；
+4. **防插图周边涂鸦乱码**：
+   - 画面中的小电脑、小画板等插图周围，**必须在提示词显式严禁涂鸦乱码**：`Clean illustration ONLY, ABSOLUTELY NO floating decorative doodle words or scribble characters around laptop/board`，根除类似“开源·月广屋”等火星文；
+5. **拓扑胶囊文字大字直白化**：
+   - 架构拓扑胶囊内严禁嵌套带括号的拥挤小字（如不要写 `platform-api (后端)`，容易导致“后”粘连变形为“荷”），统一采用直白稳固词组（如 `前端平台 web`、`后端服务 api`、`执行引擎 runtime`）；
+6. **提示词防呆负向约束与验收硬性断言**：
+   - 提示词末尾必须注入标准负向禁令（NO garbled pseudo-Chinese characters, NO typos）；
+   - 图片生成后，**必须强制调用 `view_file` 放大核验卡片内的每一个汉字**！一旦发现字形变形或错别字，立即重构提示词重新生成，严禁带病入库！

@@ -22,14 +22,15 @@ ai-learn/
 ├── AGENTS.md                   # 本文件：项目总览 & Agent 工作约定
 ├── README.md                   # 项目说明
 │
-├── .agents/skills/             # 专属 Skills
+├── .agents/skills/             # 专属 Skills (通用文本润色由全局 humanizer-zh 托管)
 │   ├── gpt-image-gen/          # 图像生成能力（OpenAI-compatible / 概念图 / 封面）
 │   ├── excalidraw-gen/         # Excalidraw 原生手绘思维导图生成与导出引擎（霞鹜文楷/双向绑定）
 │   ├── interview-qa/           # 面试题处理核心技能（去重 / 分类 / 记忆技巧 / Excalidraw规范）
 │   ├── project-linker/         # 关联 ai-agent-platform 真实实现
 │   ├── article-gen/            # 面试内容转多平台技术文章
 │   ├── article-publisher/      # 多平台草稿箱一键无损同步 (掘金/知乎/小红书/CSDN等29+平台)
-│   └── humanizer/              # 文本去AI味与中文自媒体去油腻套话重构引擎
+│   ├── lark-doc/               # 飞书云文档/Wiki 深度读取与内容解析
+│   └── lark-shared/            # 飞书 CLI 底座与认证凭据管理
 │
 ├── 00-roadmap/                 # 学习路线 & 进度追踪
 │   └── roadmap.md
@@ -91,9 +92,18 @@ ai-learn/
    - 高光突破点精炼进 `knowledge-deck`
    - 优质专题调用 `article-gen` 转化为各平台文章，并通过 `article-publisher` 直推各大平台草稿箱。
 
-### ✍️ 默认文字编写守则（强制去 AI 油腻感 · 遵守 humanizer 规范）
+### 📚 飞书文档无感直读约定（Zero-Friction Doc Fetch）
+- **触发意图**：当用户在对话中发送包含 `飞书文档：<URL>`、`帮我读一下这篇文档`、`阅读飞书文档` 或给出飞书/豆包云文档（`/docx/`、`/wiki/`）链接时，**Agent 必须无感自主执行，禁止要求用户指定 CLI 路径或手动跑命令**。
+- **底层执行标准**：
+  直接调用本项目本地可执行文件：
+  ```bash
+  ./bin/lark-cli docs +fetch --doc "<文档URL或token>" --doc-format markdown --as user
+  ```
+- **输出交付标准**：获取 Markdown 正文后，自动执行深度结构化梳理，提炼技术要点，并根据内容分类引导沉淀至 `01-interview-qa/` 或 `05-resources/`。
 
-所有生成的文章底稿（`03-articles/`）、面试题解（`01-interview-qa/`）与技术笔记，**默认强制执行 [humanizer](.agents/skills/humanizer/SKILL.md) 规则**，杜绝任何 AI 腔调与八股套话：
+### ✍️ 默认文字编写守则（强制去 AI 油腻感 · 遵守 humanizer-zh 规范）
+
+所有生成的文章底稿（`03-articles/`）、面试题解（`01-interview-qa/`）与技术笔记，**默认强制执行全局 [humanizer-zh](file:///Users/lijiaxin/.gemini/config/skills/humanizer-zh/SKILL.md) 规则**，杜绝任何 AI 腔调与八股套话：
 
 1. **❌ 严禁宏大空洞的时代开场白**：禁止出现“在当今数字化/AI浪潮席卷的时代”、“随着大模型技术的突飞猛进”等虚浮定调，第一句话必须直接切入真实痛点、现场报错或代码瓶颈。
 2. **❌ 严禁强行升华与鸡汤收尾**：禁止出现“让我们拭目以待”、“道阻且长，行则将至”、“这是一场思维的革命”等小学作文式上价值；文末收尾只准保留硬核技术总结、真实缺陷（Limitations）或开放式讨论。
@@ -217,3 +227,8 @@ ai-learn/
 - **全网分发矩阵（平台收敛铁律）**：
   * **长文博客赛道（锁定四大平台）**：**知乎 / 掘金 / CSDN / 博客园**（通过 WechatSync 一键直推草稿箱，其他长文平台暂时不发布）；
   * **移动端图文赛道**：**小红书**（日漫美少女高密度手账系列，3:4 满屏独立图文流）。
+
+## ⚙️ 全局依赖 Skills 规范
+
+- **中文去 AI 油腻感引擎 (强制执行)**：全局 Skill [`humanizer-zh`](file:///Users/lijiaxin/.gemini/config/skills/humanizer-zh/SKILL.md)（源自 [op7418/humanizer-zh](https://github.com/op7418/humanizer-zh)），负责所有题解底稿、知识库笔记与长文博客的去八股套话与深度中文润色。
+- **英文去 AI 痕迹引擎**：全局 Skill [`humanizer`](file:///Users/lijiaxin/.gemini/config/skills/humanizer/SKILL.md)（源自 [blader/humanizer](https://github.com/blader/humanizer)），负责纯英文 PR、技术文档及代码注释的自然表达重构。
